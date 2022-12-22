@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+
+import './css/index.css';
+import './css/bg-effect.css';
+import './font/stylesheet.css'
+
+import Navbar from './Navbar.js';
+import Background from './background-effect.js';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Navbar/>
+    <Background/>
   </React.StrictMode>
 );
 
