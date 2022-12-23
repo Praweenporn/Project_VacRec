@@ -22,8 +22,9 @@ root.render(
   <BackgroundImage>
 
   </BackgroundImage> 
+  
   <Backtotoptext/>
-  <AddVaccine></AddVaccine>
+<AddVaccine/> 
   </React.StrictMode>
 );
 
