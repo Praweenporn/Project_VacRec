@@ -6,24 +6,15 @@ import './css/bg-effect.css';
 import './font/stylesheet.css';
 
 import Navbar from './Navbar.js';
-import Datatable from './Datatables.js';
-import BackgroundImage from './background-effect.js';
-import Backtotoptext from './backtotoptext.js';
-import Backtotopbutton from './backtotopbutton.js';
 import AddVaccine from './addVaccine.js';
 
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const vaccine = ReactDOM.createRoot(document.getElementById('vaccine'));
 
-root.render(
+vaccine.render(
   <React.StrictMode>
   <Navbar/>  
-  <BackgroundImage>
-
-  </BackgroundImage> 
-  <Backtotoptext/>
-  <AddVaccine></AddVaccine>
   </React.StrictMode>
 );
 
