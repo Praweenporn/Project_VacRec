@@ -11,8 +11,9 @@ import BackgroundImage from './background-effect.js';
 import Backtotoptext from './backtotoptext.js';
 import Backtotopbutton from './backtotopbutton.js';
 import AddVaccine from './addVaccine.js';
+import VaccineHistory from './addVaccine.js';
 
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './vaccineHistory';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -22,9 +23,8 @@ root.render(
   <BackgroundImage>
 
   </BackgroundImage> 
-  
+  <VaccineHistory/>
   <Backtotoptext/>
-<AddVaccine/> 
   </React.StrictMode>
 );
 

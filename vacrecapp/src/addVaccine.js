@@ -1,11 +1,12 @@
 import { React , Component } from 'react';
 import Cascading from "./cascadindDropdown.js";
+import './css/vaccinehistory.css';
 
 class AddVaccine extends Component{
     constructor(){
         super();
         this.state={
-            title : "My React App",
+            title : "ข้อมูลการรับวัคซีนของผู้ป่วย",
             VaccineData : [],
             act : 0,
             index : ''
@@ -65,20 +66,34 @@ render(){
     let VaccineData = this.state.VaccineData;
 
     return(
-        <div>
-        <h1>{this.state.title}</h1>
+        <div className='container' style={{
+            position: "relative",
+            textAlign: "center",
+        }}>
+        <h1 style={{
+            position: "relative",
+            textAlign: "center",
+            marginTop: "20px;",
+        }}>
+            {this.state.title}
+        </h1>
         <form ref="myForm">
             <br></br>
             <Cascading/>
             <br />
-            <label>Name</label>
+            <label>Name</label>  &nbsp;
             <input type="text" ref="txtName" placeholder="Enter Name"/>
-            <label>Age</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; 
+            <label>Age</label> &nbsp;
             <input type="text" ref="txtAge" placeholder="Enter Age"/>
             <button onClick={e => this.handleSubmit(e)}>Add</button>
         
             <br />
         </form>
+        <div style={{
+               position: "relative",
+               textAlign: "center",
+        }}>
         <table>
             <tr>
                 <th>Name</th>
@@ -101,6 +116,7 @@ render(){
             } 
             
         </table>
+        </div>
         </div>
     )
 }
