@@ -6,7 +6,6 @@
     
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="/src/font/stylesheet.css">
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
@@ -18,16 +17,14 @@
       name="description"
       content="Web site created using create-react-app"
     />
-
     <title>React App</title>
   </head>
   
   <body>
-    <h1>ตาราง</h1>
-    <table id="example" class="table table-striped table-bordered" style="width:100%;">
+    <table id="patientDatatable" class="table table-bordered" style="width:100%;">
         <thead>
             <tr>
-                <th style="font-family: 'pk_sukhothairegular';">Hospital Number</th>
+                <th>Hospital Number</th>
                 <th>ชื่อ-นามสกุล</th>
                 <th>อายุ</th>
                 <th>เพศ</th>
@@ -38,258 +35,255 @@
         </thead>
         <tbody>
             <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011-04-25</td>
-                <td>$320,800</td>
-                <td>$320,800</td>
+                <td>82101</td>
+                <td>จารุพิชญ์ ใจดี</td>
+                <td>45</td>
+                <td>ชาย</td>
+                <td>N/A </td>
+                <td>Penicillin</td>
+                <td><img src="delivery-boy.png" class=""/></td>
             </tr>
             <tr>
-                <td>Garrett Winters</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>63</td>
-                <td>2011-07-25</td>
-                <td>$170,750</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Ashton Cox</td>
-                <td>Junior Technical Author</td>
-                <td>San Francisco</td>
-                <td>66</td>
-                <td>2009-01-12</td>
-                <td>$86,000</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Cedric Kelly</td>
-                <td>Senior Javascript Developer</td>
-                <td>Edinburgh</td>
-                <td>22</td>
-                <td>2012-03-29</td>
-                <td>$433,060</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Airi Satou</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>33</td>
-                <td>2008-11-28</td>
-                <td>$162,700</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Brielle Williamson</td>
-                <td>Integration Specialist</td>
-                <td>New York</td>
-                <td>61</td>
-                <td>2012-12-02</td>
-                <td>$372,000</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Herrod Chandler</td>
-                <td>Sales Assistant</td>
-                <td>San Francisco</td>
-                <td>59</td>
-                <td>2012-08-06</td>
-                <td>$137,500</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Rhona Davidson</td>
-                <td>Integration Specialist</td>
-                <td>Tokyo</td>
-                <td>55</td>
-                <td>2010-10-14</td>
-                <td>$327,900</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Colleen Hurst</td>
-                <td>Javascript Developer</td>
-                <td>San Francisco</td>
-                <td>39</td>
-                <td>2009-09-15</td>
-                <td>$205,500</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Sonya Frost</td>
-                <td>Software Engineer</td>
-                <td>Edinburgh</td>
-                <td>23</td>
-                <td>2008-12-13</td>
-                <td>$103,600</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Jena Gaines</td>
-                <td>Office Manager</td>
-                <td>London</td>
-                <td>30</td>
-                <td>2008-12-19</td>
-                <td>$90,560</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Quinn Flynn</td>
-                <td>Support Lead</td>
-                <td>Edinburgh</td>
-                <td>22</td>
-                <td>2013-03-03</td>
-                <td>$342,000</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Charde Marshall</td>
-                <td>Regional Director</td>
-                <td>San Francisco</td>
-                <td>36</td>
-                <td>2008-10-16</td>
-                <td>$470,600</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Haley Kennedy</td>
-                <td>Senior Marketing Designer</td>
-                <td>London</td>
-                <td>43</td>
-                <td>2012-12-18</td>
-                <td>$313,500</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Tatyana Fitzpatrick</td>
-                <td>Regional Director</td>
-                <td>London</td>
-                <td>19</td>
-                <td>2010-03-17</td>
-                <td>$385,750</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Michael Silva</td>
-                <td>Marketing Designer</td>
-                <td>London</td>
-                <td>66</td>
-                <td>2012-11-27</td>
-                <td>$198,500</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Paul Byrd</td>
-                <td>Chief Financial Officer (CFO)</td>
-                <td>New York</td>
-                <td>64</td>
-                <td>2010-06-09</td>
-                <td>$725,000</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Gloria Little</td>
-                <td>Systems Administrator</td>
-                <td>New York</td>
-                <td>59</td>
-                <td>2009-04-10</td>
-                <td>$237,500</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Bradley Greer</td>
-                <td>Software Engineer</td>
-                <td>London</td>
-                <td>41</td>
-                <td>2012-10-13</td>
-                <td>$132,000</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Dai Rios</td>
-                <td>Personnel Lead</td>
-                <td>Edinburgh</td>
+                <td>82103</td>
+                <td>ฌานณรงค์ สงบจิต</td>
                 <td>35</td>
-                <td>2012-09-26</td>
-                <td>$217,500</td>
-                <td>$320,800</td>
+                <td>ชาย</td>
+                <td>โรคเบาหวาน</td>
+                <td>N/A</td>
+                <td><img src="user.png" class=""/></td>
             </tr>
             <tr>
-                <td>Jenette Caldwell</td>
-                <td>Development Lead</td>
-                <td>New York</td>
-                <td>30</td>
-                <td>2011-09-03</td>
-                <td>$345,000</td>
-                <td>$320,800</td>
+                <td>82105</td>
+                <td>กวิสรา แก้วสะอาด</td>
+                <td>18</td>
+                <td>หญิง</td>
+                <td>โรคภูมิคุ้มกันบกพร่อง</td>
+                <td>Sulfonamides</td>
+                <td><img src="woman.png" class=""/></td>
             </tr>
             <tr>
-                <td>Yuri Berry</td>
-                <td>Chief Marketing Officer (CMO)</td>
-                <td>New York</td>
+                <td>82204</td>
+                <td>ญาธิป สุขสว่าง</td>
+                <td>27</td>
+                <td>ชาย</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td><img src="boy.png" class=""/></td>
+            </tr>
+            <tr>
+                <td>82210</td>
+                <td>ตรีพิชญ์ชา เควช</td>
+                <td>20</td>
+                <td>หญิง</td>
+                <td>N/A</td>
+                <td>NSAIDs</td>
+                <td><img src="girl.png" class=""/></td>
+            </tr>
+            <tr>
+                <td>82215</td>
+                <td>ปกรณ์กิตติ์ กงท่อง</td>
                 <td>40</td>
-                <td>2009-06-25</td>
-                <td>$675,000</td>
-                <td>$320,800</td>
+                <td>ชาย</td>
+                <td>โรคความดันโลหิตสูง</td>
+                <td>N/A</td>
+                <td><img src="boy (1).png" class=""/></td>
             </tr>
             <tr>
-                <td>Caesar Vance</td>
-                <td>Pre-Sales Support</td>
-                <td>New York</td>
-                <td>21</td>
-                <td>2011-12-12</td>
-                <td>$106,450</td>
-                <td>$320,800</td>
+                <td>82240</td>
+                <td>จิดารันต์ แก้วมณี</td>
+                <td>30</td>
+                <td>หญิง</td>
+                <td>N/A</td>
+                <td>ยากันชัก</td>
+                <td><img src="" alt=""></td>
             </tr>
             <tr>
-                <td>Doris Wilder</td>
-                <td>Sales Assistant</td>
-                <td>Sydney</td>
-                <td>23</td>
-                <td>2010-09-20</td>
-                <td>$85,600</td>
-                <td>$320,800</td>
+                <td>82249</td>
+                <td>เขตคาม ข้ามโขง</td>
+                <td>60</td>
+                <td>ชาย</td>
+                <td>โรคปอด</td>
+                <td>N/A</td>
+                <td><img src="" alt=""></td>
             </tr>
             <tr>
-                <td>Angelica Ramos</td>
-                <td>Chief Executive Officer (CEO)</td>
-                <td>London</td>
-                <td>47</td>
-                <td>2009-10-09</td>
-                <td>$1,200,000</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Gavin Joyce</td>
-                <td>Developer</td>
-                <td>Edinburgh</td>
+                <td>82250</td>
+                <td>คติยา อร่ามศรี</td>
                 <td>42</td>
-                <td>2010-12-22</td>
-                <td>$92,575</td>
-                <td>$320,800</td>
+                <td>หญิง</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td><img src="" alt=""></td>
             </tr>
             <tr>
-                <td>Jennifer Chang</td>
-                <td>Regional Director</td>
-                <td>Singapore</td>
-                <td>28</td>
-                <td>2010-11-14</td>
-                <td>$357,650</td>
-                <td>$320,800</td>
+                <td>82262</td>
+                <td>ฉันทวิชญ์ วิจิตใจ</td>
+                <td>16</td>
+                <td>ชาย</td>
+                <td>โรคเบาหวาน</td>
+                <td>N/A</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>82267</td>
+                <td>ฌานณรงค์ เพชรเกษม</td>
+                <td>29</td>
+                <td>ชาย</td>
+                <td>N/A</td>
+                <td>Penicillin</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>82269</td>
+                <td>เฌอมณี เพชรพลอย</td>
+                <td>10</td>
+                <td>หญิง</td>
+                <td>โรคมะเร็ง</td>
+                <td>ยาเคมีบำบัด</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>82510</td>
+                <td>ฐานิน นันทาวงศ์</td>
+                <td>33</td>
+                <td>ชาย</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>82011</td>
+                <td>ณัฏฐกันย์ ดวงพร</td>
+                <td>63</td>
+                <td>หญิง</td>
+                <td>โรคอ้วน</td>
+                <td>N/A</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>80005</td>
+                <td>ดนุชภร กะทิม</td>
+                <td>25</td>
+                <td>ชาย</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>80025</td>
+                <td>ติณห์ ภัคพงศ์</td>
+                <td>61</td>
+                <td>ชาย</td>
+                <td>โรคไตเรื้อรัง</td>
+                <td>N/A</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>80038</td>
+                <td>ทักษภร แล่ลิ่ม</td>
+                <td>20</td>
+                <td>หญิง</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>80248</td>
+                <td>ธดากรณ์ ขอมเพ</td>
+                <td>30</td>
+                <td>หญิง</td>
+                <td>N/A</td>
+                <td>Sulfonamides</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>88103</td>
+                <td>ธดากรณ์ ขอมเพ</td>
+                <td>63</td>
+                <td>ชาย</td>
+                <td>N/A</td>
+                <td>NSAIDs</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>15678</td>
+                <td>บดีศวร เทพทัช</td>
+                <td>36</td>
+                <td>ชาย</td>
+                <td>โรคหอบหืด</td>
+                <td>N/A</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>625305</td>
+                <td>บุณณดา รัตนภพ</td>
+                <td>26</td>
+                <td>หญิง</td>
+                <td>N/A</td>
+                <td>Penicillin</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>47820</td>
+                <td>พงศ์พล แพรงาม</td>
+                <td>15</td>
+                <td>ชาย</td>
+                <td>โรคอ้วน</td>
+                <td>NSAIDs</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>95001</td>
+                <td>ภีมพัฒน์ รัตนกฤษ</td>
+                <td>27</td>
+                <td>ชาย</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>42013</td>
+                <td>ภาวิดา เร็วเรียบ</td>
+                <td>40</td>
+                <td>หญิง</td>
+                <td>โรคหัวใจเต้นผิดจังหวะ</td>
+                <td>ยากันชัก</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>19630</td>
+                <td>รดากร ลองลอย</td>
+                <td>33</td>
+                <td>หญิง</td>
+                <td>N/A</td>
+                <td>Sulfonamides</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>52010</td>
+                <td>เลอสันต์ สจ๊วต</td>
+                <td>29</td>
+                <td>ชาย</td>
+                <td>โรคตับแข็ง</td>
+                <td>N/A</td>
+                <td><img src="" alt=""></td>
+            </tr>
+            <tr>
+                <td>94100</td>
+                <td>สกลพัชญ์ ตรองตรำ</td>
+                <td>55</td>
+                <td>ชาย</td>
+                <td>โรคความดันโลหิตสูง</td>
+                <td>NSAIDs</td>
+                <td><img src="" alt=""></td>
             </tr>
         </tbody>
     </table>
-    <p>
-
-    </p>
   </body>
 </html>
 
 <script>
     $(document).ready(function () {
-    $('#example').DataTable();
+    $('#patientDatatable').DataTable();
 });
 </script>

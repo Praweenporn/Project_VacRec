@@ -118,3 +118,8 @@ img.viewT{
     display: flex;
     margin-bottom: 50px;
   }
+
+  .imgUser{
+    width: auto;
+    height: auto;
+  }

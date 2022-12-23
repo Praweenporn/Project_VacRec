@@ -1,5 +1,6 @@
 import bg from './img/CoverPage.jpg';
 import view from './img/analysis.png'
+import deliveryBoy from './img/delivery-boy.png'
 import './css/bg-effect.css'
 
 /* var __html = require('./html/datatables.html');

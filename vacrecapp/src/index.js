@@ -23,7 +23,7 @@ root.render(
 );
 
 
-const DatatableVac = (
+/* const DatatableVac = (
   <div>
     <table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead>
@@ -289,7 +289,7 @@ const DatatableVac = (
 document.getElementById("tableVac").append(JSON.stringify(DatatableVac))
 
 ReactDOM.render(DatatableVac, document.getElementById("tableVac")) 
-
+ */
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
