@@ -12,6 +12,13 @@ body {
       monospace;
   }
 
-  h1{
-    background-color: blue;
+  .imgR{
+    width: 80px;
+    height: 80px;
+  }
+
+  div.spaceD{
+    position: relative;
+    margin-top: 5px;
+    left: 5px;
   }

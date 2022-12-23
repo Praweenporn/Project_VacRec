@@ -1,4 +1,4 @@
-import './css/datatables.css';
+
 
 function datatablesVac() {
   return (
