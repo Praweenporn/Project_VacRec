@@ -2,6 +2,8 @@ import bg from './img/CoverPage.jpg';
 import view from './img/analysis.png'
 import './css/bg-effect.css'
 
+import VaccineHistory from './vaccineHistory.js';
+
 function Background() {
     return (
         <div>
@@ -25,9 +27,14 @@ function Background() {
                 <p>
                     <iframe className='datatable' src="./datatables.html"></iframe>
                 </p>
-                
+
                 <br></br>
                 <br></br>
+
+                <div className='bgW'>
+                <VaccineHistory/>
+                </div>
+             
             </div>
 
             </div>

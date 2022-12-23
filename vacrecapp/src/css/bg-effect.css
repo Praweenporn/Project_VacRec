@@ -131,3 +131,10 @@ img.viewT{
     border-radius: 26px;
     box-shadow: -1px 6px 4px rgba(0, 0, 0, 0.25);
   }
+
+  .bgW{
+    border: none;
+    border-radius: 26px;
+    background: white;
+    box-shadow: -1px 6px 4px rgba(0, 0, 0, 0.25);
+  }

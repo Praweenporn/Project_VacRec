@@ -23,7 +23,7 @@ root.render(
   <BackgroundImage>
 
   </BackgroundImage> 
-  <VaccineHistory/>
+{/*   <VaccineHistory/> */}
   <Backtotoptext/>
   </React.StrictMode>
 );
