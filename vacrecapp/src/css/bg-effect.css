@@ -97,6 +97,7 @@ img.viewT{
    display: flex;
    justify-content: center;
    align-items: center;
+   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .bgBlue{
@@ -106,11 +107,12 @@ img.viewT{
     background-color: #0BA1DE;
 }
 
+/*Set iframe*/
   .datatable{
     top:0;
     left:0;
     width:100%; 
-    height: 700px;
+    height: 1270px;
   }
 
   .bottomP{
