@@ -69,6 +69,7 @@ render(){
         <div className='container' style={{
             position: "relative",
             textAlign: "center",
+            marginTop: "30px",
         }}>
         <h1 style={{
             position: "relative",
@@ -94,7 +95,10 @@ render(){
                position: "relative",
                textAlign: "center",
         }}>
-        <table>
+
+        <table style={{
+            
+        }}>
             <tr>
                 <th>Name</th>
                 <th>Age</th>
