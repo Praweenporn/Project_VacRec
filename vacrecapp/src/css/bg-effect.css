@@ -102,26 +102,9 @@ img.viewT{
 .bgBlue{
     position: relative;
     padding: 100px;
-    height: 100vh;
+    height: fit-content;
     background-color: #0BA1DE;
 }
-
-table {
-    margin-top: auto;
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
 
   .datatable{
     top:0;
