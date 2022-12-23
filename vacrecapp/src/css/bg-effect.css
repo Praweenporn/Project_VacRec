@@ -88,9 +88,15 @@ img.viewT{
   
 }
 
-
 .textP{
-   margin-bottom: 50px;
+   font-size: 29px;
+   text-decoration-line: underline;
+   color: white;
+   position: relative;
+   margin-top: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .bgBlue{
@@ -99,3 +105,33 @@ img.viewT{
     height: 100vh;
     background-color: #0BA1DE;
 }
+
+table {
+    margin-top: auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .datatable{
+    top:0;
+    left:0;
+    width:100%; 
+    height: 700px;
+  }
+
+  .bottomP{
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+  }
