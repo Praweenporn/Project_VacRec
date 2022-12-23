@@ -2,9 +2,6 @@ import bg from './img/CoverPage.jpg';
 import view from './img/analysis.png'
 import './css/bg-effect.css'
 
-/* var __html = require('./html/datatables.html');
- */
-
 function Background() {
     return (
         <div>
@@ -20,7 +17,6 @@ function Background() {
             </div>
  */}
            </div>
-
             </div>
 
             <div className='bgBlue'>
@@ -37,6 +33,6 @@ function Background() {
             </div>
     );
     }
-
+    
 export default Background;
 

@@ -8,6 +8,8 @@ import './font/stylesheet.css';
 import Navbar from './Navbar.js';
 import Datatable from './Datatables.js';
 import BackgroundImage from './background-effect.js';
+import Backtotoptext from './backtotoptext.js';
+import Backtotopbutton from './backtotopbutton.js';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -15,10 +17,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-   <Navbar/>  
- <BackgroundImage>
+  <Navbar/>  
+  <BackgroundImage>
 
   </BackgroundImage> 
+  <Backtotoptext/>
   </React.StrictMode>
 );
 
