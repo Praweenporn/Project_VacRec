@@ -97,7 +97,8 @@ render(){
 
         <form ref="myForm">
             <br></br>
-      {/*       <Cascading/> */}
+        {/* การทำ cascadind Dropdown หรือ Auto complete อยู่ในไฟล์ cascadindDropdown.js ยังไม่เสร็จสิ้น*/}
+
             <label>ประเภทวัคซีน</label>  &nbsp;
             {/* <input type="text" ref="txtName" placeholder="Enter Name"/> */}
             <select ref="txtName" style={{
@@ -302,7 +303,7 @@ render(){
                             color: 'white',
                             textDecoration: 'none',
                             cursor: 'pointer',
-                        }}>แก้ไข</button>
+                        }}>แก้ไข</button> {/* ยังไม่เสร็จสิ้น */}
                         &nbsp;
                         <button onClick={() => this.handleDelete(i)} style={{
                              border: '3px solid #EB455F',
