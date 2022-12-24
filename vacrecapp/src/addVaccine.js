@@ -71,13 +71,13 @@ render(){
             textAlign: "center",
             marginTop: "30px",
         }}>
-        <h1 style={{
+   {/*      <h1 style={{
             position: "relative",
             textAlign: "center",
             marginTop: "20px;",
         }}>
             {this.state.title}
-        </h1>
+        </h1> */}
         <form ref="myForm">
             <br></br>
             <Cascading/>

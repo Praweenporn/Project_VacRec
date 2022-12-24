@@ -100,6 +100,18 @@ img.viewT{
    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.textV{
+  font-size: 29px;
+  text-decoration-line: underline;
+  color: white;
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .bgBlue{
     position: relative;
     padding: 100px;
