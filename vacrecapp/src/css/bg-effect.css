@@ -150,3 +150,8 @@ img.viewT{
     background: white;
     box-shadow: -1px 6px 4px rgba(0, 0, 0, 0.25);
   }
+  .spacelr{
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+  }

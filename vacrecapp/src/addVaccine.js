@@ -124,7 +124,7 @@ render(){
                 }}>วัคซีนโควิด</option>
             </select> &nbsp; &nbsp; &nbsp; &nbsp;
 
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; 
             <label>ชื่อวัคซีน</label> &nbsp;
            {/*  <input type="text" ref="txtAge" placeholder="Enter Age"/> */}
             <select ref="txtAge" style={{
