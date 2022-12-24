@@ -31,7 +31,6 @@ function Navbar() {
     <a href="index.html" ><img src={logoVacrec} alt="logoVacrec" className='logoVacrec'/></a>
     <ul>
       <li><a href="index.html" className='navText'>หน้าหลัก</a></li>
-      <li><a href="vaccineHistory.html" className='navText'>ข้อมูลผู้ป่วย</a></li>
     </ul>
     </header>
   </section>
