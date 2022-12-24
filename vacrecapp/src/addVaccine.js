@@ -2,6 +2,9 @@ import { React , Component } from 'react';
 import Cascading from "./cascadindDropdown.js";
 import './css/vaccinehistory.css';
 
+import h from './img/h.png'
+import eh from './img/eh.png'
+
 class AddVaccine extends Component{
     constructor(){
         super();
@@ -237,14 +240,14 @@ render(){
             <p>
             <label>รับวัคซีนจาก</label>  &nbsp;
            {/*  <input type="text" ref="txtSource" placeholder="Enter Name"/> */}
-            <select ref="txtSource" style={{
+            <select ref="txtSource" id="sv" style={{
                  border: "2px solid #0AA1DD",
                  borderRadius: "8px",
                  fontSize: "16px",
                  height: "28px"
             }}>
                 <option value="" selected disabled hidden>เลือกแหล่งที่มา</option>
-                <option value="รพ.">รพ.</option>
+                <option value="รพ." >รพ.</option>
                 <option value="ภายนอกรพ.">ภายนอกรพ.</option>
             </select> &nbsp; &nbsp; &nbsp; &nbsp;
             <br /><br />
@@ -277,7 +280,7 @@ render(){
                 <th>วันที่ให้วัคซีน</th>
                 <th>วันที่ให้วัคซีนครั้งถัดไป</th>
                 <th>รับวัคซีนจาก</th>
-                <th>การเปลี่ยนข้อมูล</th>
+                <th>การเปลี่ยนแปลงข้อมูล</th>
             </tr>
             </thead>
             {
