@@ -4,7 +4,13 @@ body {
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
   }
-  
+
+  *{
+    font-family: 'pk_sukhothairegular',apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  }
+
   .imgR{
     display: block;
     margin-left: auto;
@@ -37,6 +43,7 @@ body {
   }
 
   .textheader{
+    font-family: 'pk_sukhothairegular';
     position: relative;
     display: flex;
     color: white;
