@@ -1,9 +1,0 @@
-npm start = start project
-npx create-react-app name_app = create react app
-cd name_app = Move path to folder name_app
-code . = open folder in editor 
-
-You can now view vacrec in the browser.
-
-  Local:            http://localhost:3000
-  On Your Network:  http://192.168.1.53:3000
