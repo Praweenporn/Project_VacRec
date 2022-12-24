@@ -249,6 +249,8 @@ render(){
             </select> &nbsp; &nbsp; &nbsp; &nbsp;
             <br /><br />
             <button onClick={e => this.handleSubmit(e)} style={{
+                  fontSize: '16px',
+                  textShadow: '4px 4px 4px rgba(0, 0, 0, 0.25)',
                   border: '3px solid #FFAC52',
                   width: '100%',
                   height: '35px',
@@ -258,7 +260,7 @@ render(){
                   textDecoration: 'none',
                   cursor: 'pointer',
                   boxShadow: '-1px 6px 4px rgba(0, 0, 0, 0.25)',
-            }}>Add</button>
+            }}>เพิ่ม</button>
             </p>
         </form>
 
