@@ -3,6 +3,19 @@ body{
     padding:0;
     box-sizing: border-box;
  /*    overflow: hidden; */
+    font-family: 'pk_sukhothairegular',apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  font-family: 'pk_sukhothairegular',apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 .positiontext{
@@ -142,6 +155,8 @@ img.viewT{
     border: none;
     border-radius: 26px;
     box-shadow: -1px 6px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'pk_sukhothairegular';
+
   }
 
   .bgW{
