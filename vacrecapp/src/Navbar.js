@@ -28,7 +28,7 @@ function Navbar() {
   <div className="navbar">
   <section>
     <header>
-    <a href="index.html" ><img src={logoVacrec} alt="logoVacrec" className='logoVacrec'/></a>
+    <a href="index.html" className='hover'><img src={logoVacrec} alt="logoVacrec" className='logoVacrec'/></a>
     <ul>
       <li><a href="index.html" className='navText'>หน้าหลัก</a></li>
     </ul>

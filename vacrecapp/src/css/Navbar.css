@@ -55,16 +55,15 @@ header ul li{
 
  header ul li a{
   display: inline-block;
-  color: #2155CD;
   font-weight: 400;
   margin-left: 60px;
   text-decoration: none;
 } 
 
-/*Logo Image css*/ 
-.logoVacrec{
-
+a.hover:hover{
+  opacity: 0.9;
 }
+/*Logo Image css*/ 
 
 .App-logo {
   height: 40vmin;
@@ -73,6 +72,13 @@ header ul li{
 
 /*Text css*/
 .navText{
+  color: #2155CD;
   font-size: 20px;
   font-weight: bold;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navText:hover{
+  color: #0AA1DD;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
