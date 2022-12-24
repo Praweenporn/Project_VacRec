@@ -31,7 +31,7 @@ function Background() {
                 <br></br>
                 <br></br>
 
-                <div className="textV">ข้อมูลการรับวัคซีนของผู้ป่วย</div>
+                <div className="textV">การลงข้อมูลการรับวัคซีนของผู้ป่วย</div>
                 <div className='bgW'>
                     <div className='spacelr'>
                         <VaccineHistory/>

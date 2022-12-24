@@ -266,6 +266,7 @@ render(){
 
         <br />
         <span>
+            <h3>ประวัติการรับวัคซีน</h3>
         <table>
             <thead>
             <tr>
