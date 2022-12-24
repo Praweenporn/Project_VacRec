@@ -94,13 +94,111 @@ render(){
 
         <form ref="myForm">
             <br></br>
-            <Cascading/>
-            <br />
+      {/*       <Cascading/> */}
             <label>ประเภทวัคซีน</label>  &nbsp;
-            <input type="text" ref="txtName" placeholder="Enter Name"/>
+            {/* <input type="text" ref="txtName" placeholder="Enter Name"/> */}
+            <select ref="txtName" style={{
+                 border: "2px solid #0AA1DD",
+                 borderRadius: "8px",
+                 fontSize: "16px",
+                 height: "28px"
+            }}>
+                <option value="" selected disabled hidden>เลือกประเภท</option>
+                <option value="วัคซีนไข้หวัดใหญ่" style={{
+                    color: '#EB455F',
+                }}>วัคซีนไข้หวัดใหญ่</option>
+                <option value="วัคซีนโรคอีสุกอีใส" style={{
+                    color: '#227C70',
+                }}>วัคซีนโรคอีสุกอีใส</option>
+                <option value="วัคซีนโรคไข้สมองอักเสบ" style={{
+                    color: '#A555EC',
+                }}>วัคซีนโรคไข้สมองอักเสบ</option>
+                <option value="วัคซีนไวรัสตับอักเสบ บี" style={{
+                    color: '#FF7000',
+                }}>วัคซีนไวรัสตับอักเสบ บี</option>
+                <option value="วัคซีนโรคไอพีดี" style={{
+                    color: '#FFBF00',
+                }}>วัคซีนโรคไอพีดี</option>
+                <option value="วัคซีนโควิด" style={{
+                    color: '#00ABB3',
+                }}>วัคซีนโควิด</option>
+            </select> &nbsp; &nbsp; &nbsp; &nbsp;
+
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; 
             <label>ชื่อวัคซีน</label> &nbsp;
-            <input type="text" ref="txtAge" placeholder="Enter Age"/>
+           {/*  <input type="text" ref="txtAge" placeholder="Enter Age"/> */}
+            <select ref="txtAge" style={{
+                 border: "2px solid #0AA1DD",
+                 borderRadius: "8px",
+                 fontSize: "16px",
+                 height: "28px"
+            }}>
+                <option value="" selected disabled hidden>เลือกวัคซีน</option>
+                <option value="Afluria" style={{
+                      color: '#EB455F',
+                }}>Afluria</option>
+                <option value="Fluarix Tetra" style={{
+                      color: '#EB455F',
+                }}>Fluarix Tetra</option>
+                <option value="Fluzone" style={{
+                     color: '#EB455F',
+                }}>Fluzone</option>
+                <option value="Vaxigrip Tetra" style={{
+                     color: '#EB455F',
+                }}>Vaxigrip Tetra</option>
+
+                <option value="Varivax" style={{
+                    color: '#227C70',
+                }}>Varivax</option>
+                <option value="Varilrix" style={{
+                     color: '#227C70',
+                }}>Varilrix</option>
+
+                <option value="Ixiaro" style={{
+                    color: '#A555EC',
+                }}>Ixiaro</option>
+                <option value="Imojev" style={{
+                    color: '#A555EC',
+                }}>Imojev</option>
+
+                <option value="Recombivax HB" style={{
+                    color: '#FF7000',
+                }}>Recombivax HB</option>
+                <option value="Engerix-B" style={{
+                    color: '#FF7000',
+                }}>Engerix-B</option>
+                <option value="Heplisav-B" style={{
+                    color: '#FF7000',
+                }}>Heplisav-B</option>
+
+                <option value="PCV10" style={{
+                    color: '#FFBF00',
+                }}>PCV10</option>
+                <option value="PCV13" style={{
+                    color: '#FFBF00',
+                }}>PCV13</option>
+
+                <option value="Pfizer-BioNTech" style={{
+                    color: '#00ABB3',
+                }}>Pfizer-BioNTech</option>
+                <option value="Moderna" style={{
+                    color: '#00ABB3',
+                }}>Moderna</option>
+                <option value="Sputnik V" style={{
+                    color: '#00ABB3',
+                }}>Sputnik V</option>
+                <option value="AstraZeneca" style={{
+                    color: '#00ABB3',
+                }}>AstraZeneca</option>
+                <option value="Sinovac" style={{
+                    color: '#00ABB3',
+                }}>Sinovac</option>
+                <option value="Sinopharm" style={{
+                    color: '#00ABB3',
+                }}>Sinopharm</option>
+
+            </select> &nbsp; &nbsp; &nbsp; &nbsp;
+            
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; 
             <label>Dose No.</label>  &nbsp;
             <input type="number" min="1" ref="txtDose" placeholder="กรอก Dose No." style={{
@@ -112,7 +210,7 @@ render(){
             
             <p>
             <label>แพทย์ผู้สั่ง</label>  &nbsp;
-            <input type="text" ref="txtDoctor" placeholder="Enter Name" style={{
+            <input type="text" ref="txtDoctor" placeholder="กรอกชื่อ-นามสกุล" style={{
                  border: "2px solid #0AA1DD",
                  borderRadius: "8px",
                  fontSize: "16px",
@@ -143,7 +241,7 @@ render(){
                  border: "2px solid #0AA1DD",
                  borderRadius: "8px",
                  fontSize: "16px",
-                 height: "25px"
+                 height: "28px"
             }}>
                 <option value="" selected disabled hidden>เลือกแหล่งที่มา</option>
                 <option value="รพ.">รพ.</option>
@@ -159,13 +257,12 @@ render(){
                   color: 'white',
                   textDecoration: 'none',
                   cursor: 'pointer',
+                  boxShadow: '-1px 6px 4px rgba(0, 0, 0, 0.25)',
             }}>Add</button>
             </p>
         </form>
 
         <br />
-        <br />
-        
         <span>
         <table>
             <thead>
@@ -177,7 +274,7 @@ render(){
                 <th>วันที่ให้วัคซีน</th>
                 <th>วันที่ให้วัคซีนครั้งถัดไป</th>
                 <th>รับวัคซีนจาก</th>
-                <th>การกระทำข้อมูล</th>
+                <th>การเปลี่ยนข้อมูล</th>
             </tr>
             </thead>
             {
