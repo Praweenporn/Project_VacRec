@@ -13,7 +13,7 @@ body {
   }
 
   table, td, th {
-    border: 1px solid black;
+    border: 1px solid #BFBFBF;
   }
   
   table {
@@ -29,4 +29,19 @@ body {
   td {
     height: 50px;
     vertical-align: bottom;
+  }
+
+  thead{
+    background: #0BA1DE;
+    color:antiquewhite;
+  }
+
+  .btnEdit{
+    background-color: #0AA1DD;
+    border-radius: 8px;
+    border: #0AA1DD;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: -1px 6px 4px rgba(0, 0, 0, 0.25);
   }

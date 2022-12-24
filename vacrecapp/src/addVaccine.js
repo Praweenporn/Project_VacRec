@@ -149,7 +149,17 @@ render(){
                 <option value="รพ.">รพ.</option>
                 <option value="ภายนอกรพ.">ภายนอกรพ.</option>
             </select> &nbsp; &nbsp; &nbsp; &nbsp;
-            <button onClick={e => this.handleSubmit(e)}>Add</button>
+            <br /><br />
+            <button onClick={e => this.handleSubmit(e)} style={{
+                  border: '3px solid #FFAC52',
+                  width: '100%',
+                  height: '35px',
+                  backgroundColor: '#FFAC52', 
+                  borderRadius: '8px',
+                  color: 'white',
+                  textDecoration: 'none',
+                  cursor: 'pointer',
+            }}>Add</button>
             </p>
         </form>
 
@@ -158,6 +168,7 @@ render(){
         
         <span>
         <table>
+            <thead>
             <tr>
                 <th>ประเภทวัคซีน</th>
                 <th>ชื่อวัคซีน</th>
@@ -166,7 +177,9 @@ render(){
                 <th>วันที่ให้วัคซีน</th>
                 <th>วันที่ให้วัคซีนครั้งถัดไป</th>
                 <th>รับวัคซีนจาก</th>
+                <th>การกระทำข้อมูล</th>
             </tr>
+            </thead>
             {
                 VaccineData.map((data, i) =>
                 <tr key={i}>
@@ -178,13 +191,30 @@ render(){
                     <td>{data.dateNext}</td>
                     <td>{data.source}</td>
                     <td>
-                        <button onClick={i => this.handleEdit(i)}>Edit</button>
+                        <button onClick={i => this.handleEdit(i)} style={{
+                            border: '3px solid #2A3990',
+                            height: '35px',
+                            backgroundColor: '#2A3990', 
+                            borderRadius: '8px',
+                            color: 'white',
+                            textDecoration: 'none',
+                            cursor: 'pointer',
+                        }}>แก้ไข</button>
+                        &nbsp;
+                        <button onClick={() => this.handleDelete(i)} style={{
+                             border: '3px solid #EB455F',
+                             height: '35px',
+                             backgroundColor: '#EB455F', 
+                             borderRadius: '8px',
+                             color: 'white',
+                             textDecoration: 'none',
+                             cursor: 'pointer',
+                        }}>ลบ</button>
                        {/*  <button onClick={this.handleEdit(i)}>Edit</button> */}
                     </td>
-                    <td>
+                 {/*    <td>
                         <button onClick={() => this.handleDelete(i)}>Delete</button>
-                        {/* <button onClick={this.handleDelete(i)}>Delete</button> */}
-                    </td>
+                    </td> */}
                 </tr> )
             } 
         </table>
